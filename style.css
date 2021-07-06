@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+body {
+  margin: 16px 48px;
+  font-family: Noto Sans JP, normal;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+p {
+  margin: 1em 0.75em;
+}
+
+a {
+  color: rgba(53, 65, 172, 0.931);
+  text-decoration: none;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 0px;
+}
+
+h1 {
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 1.875rem;
+}
+
+.page-wrapper {
+  position: relative;
+  display: grid;
+  column-gap: 1.7rem;
+  row-gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.supporting {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+header {
+  font-family: Pacifico, cursive;
+  font-size: 3em;
+}
+
+.intro {
+  grid-column: 1/span 3;
+}
+
+.main {
+  grid-column: 1/span 2;
+}
+
+.summary {
+  text-align: center;
+  margin: 0px 10px;
+}
+
+.preamble {
+  background-color: rgba(110, 231, 183, var(--tw-bg-opacity));
+}
+
+.explanation,
+.requirements,
+.participation,
+.benefits,
+.preamble {
+  font-size: 1rem;
+  padding: 24px;
+  border-radius: 0.5em;
+  --tw-bg-opacity: 1;
+  background-color: rgba(167, 243, 208, var(--tw-bg-opacity));
+}
+
+.design-selection,
+.design-archives,
+.zen-resources {
+  margin: 0px 0px 1.7em 0px;
+  padding: 24px;
+  border-radius: 0.5em;
+  background-color: #fef3c7;
+}
+
+.zen-validate-html, .zen-validate-css, .zen-license, .zen-accessibility, .zen-github {
+  color: white;
+  background-color: #030303;
+  border-radius: 0.5em;
+  padding: 1.5em;
+  margin: 0px 0.5em;
+}
+
+.zen-validate-html:hover, .zen-validate-css:hover, .zen-license:hover, .zen-accessibility:hover, .zen-github:hover {
+  opacity: 0.5;
+}
+
+footer {
+  padding: 50px 0px;
+  text-align: center;
+  width: 100%;
+  border-radius: 0.5em;
+  position: absolute;
+  background: rgba(105, 102, 102, 0.192);
+  left: 0px;
+  right: 0px;
+  bottom: -175px;
+}
+
+/*# sourceMappingURL=style.css.map */
