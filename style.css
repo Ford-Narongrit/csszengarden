@@ -3,14 +3,16 @@
 body {
   margin: 16px 48px;
   font-family: Noto Sans JP, normal;
+  color: #1a1919;
 }
 
 abbr {
+  color: rgba(189, 56, 15, 0.931);
   text-decoration: none;
 }
 
-p {
-  margin: 1em 0.75em;
+abbr:hover {
+  color: #660707;
 }
 
 a {
@@ -18,9 +20,19 @@ a {
   text-decoration: none;
 }
 
-h1, h2 {
+a:hover {
+  color: rgba(154, 160, 207, 0.931);
+}
+
+p {
+  margin: 1em 0.75em;
+}
+
+h1,
+h2 {
   text-align: center;
   margin: 0px;
+  animation: bounce 1s infinite;
 }
 
 h1 {
@@ -87,7 +99,11 @@ header {
   background-color: #fef3c7;
 }
 
-.zen-validate-html, .zen-validate-css, .zen-license, .zen-accessibility, .zen-github {
+.zen-validate-html,
+.zen-validate-css,
+.zen-license,
+.zen-accessibility,
+.zen-github {
   color: white;
   background-color: #030303;
   border-radius: 0.5em;
@@ -95,7 +111,11 @@ header {
   margin: 0px 0.5em;
 }
 
-.zen-validate-html:hover, .zen-validate-css:hover, .zen-license:hover, .zen-accessibility:hover, .zen-github:hover {
+.zen-validate-html:hover,
+.zen-validate-css:hover,
+.zen-license:hover,
+.zen-accessibility:hover,
+.zen-github:hover {
   opacity: 0.5;
 }
 
@@ -109,6 +129,38 @@ footer {
   left: 0px;
   right: 0px;
   bottom: -175px;
+}
+
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+.design-selection,
+.design-archives,
+.zen-resources {
+  animation: fade-in-down 1s ease-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animationtimingfunction: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animationtimingfunction: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
